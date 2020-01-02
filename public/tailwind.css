@@ -1,0 +1,62 @@
+:root {
+  --color-primary: #3dc9b0;
+  --color-secondary: #c594c5;
+}
+
+@tailwind base;
+
+
+@font-face {
+  font-family: FiraCode;
+  font-weight: 400;
+  /* src: url(/fonts/proxima-nova/400-regular.woff) format("woff"); */
+}
+@font-face {
+  font-family: FiraCode;
+  font-weight: 500;
+  /* src: url(/fonts/proxima-nova/500-medium.woff) format("woff"); */
+}
+
+a {
+  @apply text-blue-600 underline;
+}
+
+@tailwind components;
+
+
+.btn {
+  @apply font-bold py-2 px-4 rounded;
+}
+
+.btn-default {
+  @apply bg-gray-400 text-gray-800;
+}
+.btn-default:hover {
+  @apply bg-gray-500;
+}
+
+.btn-primary {
+  @apply bg-blue-500 text-white;
+}
+.btn-primary:hover {
+  @apply bg-blue-700;
+}
+
+.btn-success {
+  @apply bg-green-500 text-white
+}
+
+.btn-success:hover {
+  @apply bg-green-400
+}
+
+.btn-danger {
+  @apply bg-red-500 text-white
+}
+
+.btn-danger:hover {
+  @apply bg-red-400
+}
+
+
+@tailwind utilities;
